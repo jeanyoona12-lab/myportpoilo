@@ -1,0 +1,49 @@
+// anton 512 128
+// import 필수 !! 
+//     @import "/scss/font";
+//     @import "./scss/mixin";
+
+@mixin en-1($size: 512px) {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: $size;
+}
+@mixin en-2($size: 312px) {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: $size;
+}
+@mixin en-3($size: 255px) {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: $size;
+}
+@mixin en-4($size: 128px) {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: $size;
+}
+
+//lora
+@mixin en-lora($size: 32px, $weight: 500) {
+    font-family: "Lora", serif;
+    font-weight: $weight;
+    font-size: $size;
+}
+
+// nordminne
+@mixin nordminne($size: 250px) {
+    font-family: "NordminneScript", cursive;
+    font-size: $size;
+    font-weight: normal;
+}
+
+// pretendard
+@mixin preten-Bold {
+    font-family: "Pretendard", sans-serif;
+    font-weight: 700;
+}
+@mixin preten-Regular {
+    font-family: "Pretendard", sans-serif;
+    font-weight: 300;
+}

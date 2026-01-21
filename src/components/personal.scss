@@ -1,0 +1,79 @@
+@import "../scss/global.scss";
+
+
+.hero-title {
+    @include en-3;
+    font-size: 170px;
+    color: #535353;
+}
+.text-hero{
+    display: flex;
+    padding: 3rem;
+    position: fixed;
+    bottom: 0;
+}
+.hero-sub {
+    font-family: "NordminneScript";
+    font-size: 180px;
+    transform: translateX(-50px) translateY(30px);
+}
+.personal-page {
+    position: relative;
+    height: 100vh
+}
+
+.image-section {
+    img {
+        position: absolute;
+        width: 70%;
+        top: 70px;
+        left: 55px;
+    }
+}
+
+.mockup-wrap {
+    position: relative;
+    .mockup {
+        display: inline-block;
+        &.mobile {
+            width: 28%;
+            position: fixed;
+            top: 370px;
+            left: 70%;
+            z-index: 1;
+        }
+        &.desktop {
+            width: 45%;
+            position: fixed;
+            top: 400px;
+            left: 52%;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+}
+
+// .mockup.dashboard.desktop{
+//     transform: translateY(20px);
+// }
+.box-text {
+    position: absolute;
+    top: -20px;
+    padding: 3rem
+}
+.next-block > h3 {
+    @include en-4;
+}
+.next-block > p {
+    @include preten-Regular;
+}
+.trouble-block > h3 {
+    @include en-4;
+}
+.trouble-block > p {
+    @include preten-Regular;
+}
+

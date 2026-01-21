@@ -1,0 +1,77 @@
+@import "../scss/global.scss";
+
+.reste-page {
+    background-color: f4f4f4;
+    height: 100vh;
+}
+.reste-title {
+    @include en-4;
+    color: #f4f4f4;
+    text-align: right;
+    padding: 3rem;
+}
+
+.box-text {
+    color: #1c1c1c;
+}
+
+.reste-trouble-block,
+.reste-next-block {
+    @include preten-Regular;
+    color: #1c1c1c;
+}
+
+.reste-next-block {
+    margin-top: 5rem;
+}
+.reste-image {
+    position: fixed;
+    top: 28%;
+    left: 45%;
+    width: 55%;
+}
+
+.reste-inner-text-top p {
+    padding: 1rem 0 0 0;
+}
+.reste-inner-text-bottom {
+    padding-top: 1rem;
+}
+
+.reste-trouble-block > h3 {
+    @include en-4;
+    color: #1c1c1c;
+}
+.reste-next-block > h3 {
+    @include en-4;
+    color: #1c1c1c;
+}
+
+.box-text p {
+    opacity: 0;
+    transform: translateX(-24px);
+    animation: textSlide 0.45s ease-out forwards;
+}
+
+.box-text p:nth-child(1) {
+    animation-delay: 0.05s;
+}
+.box-text p:nth-child(2) {
+    animation-delay: 0.12s;
+}
+.box-text p:nth-child(3) {
+    animation-delay: 0.19s;
+}
+.box-text p:nth-child(4) {
+    animation-delay: 0.26s;
+}
+.box-text p:nth-child(5) {
+    animation-delay: 0.33s;
+}
+
+@keyframes textSlide {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,119 @@
+@import "../scss/global.scss";
+
+
+.skills-page {
+}
+.skills {
+    @include en-2;
+    color: #1c1c1c;
+    transform: translateY(-40px) translateX(50px);
+}
+
+.skills-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 70vh;
+    @include en-4;
+    color: #fff;
+    text-align: center;
+    background-color: #000000;
+}
+.left,
+.middle,
+.right {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.left::after,
+.middle::after,
+.right::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(12px);
+    background: rgba(0, 0, 0, 0.25);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+// .left:hover::after,
+// .middle:hover::after,
+// .right:hover::after {
+//     backdrop-filter: blur(3px);
+//     background: rgba(0, 0, 0, 0);
+// }
+
+.label {
+    position: relative;
+    z-index: 2;
+    font-weight: 900;
+    color: #fff;
+    font-size: clamp(60px, 10vw, 68px);
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+    @include preten-Regular;
+    font-size: 21px;
+    line-height: 20px;
+}
+.left:hover .items,
+.middle:hover .items,
+.right:hover .items {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.items span {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: 0.25s;
+}
+.items span:after {
+    display: block;
+    content: "-";
+}
+
+.items span:nth-child(1) {
+    transition-delay: 0.05s; 
+}
+.items span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+.items span:nth-child(3) {
+    transition-delay: 0.15s;
+}
+.items span:nth-child(4) {
+    transition-delay: 0.2s;
+}
+.items span:nth-child(5) {
+    transition-delay: 0.25s;
+}
+.items span:nth-child(6) {
+    transition-delay: 0.3s;
+}
+
+.left:hover .items span,
+.middle:hover .items span,
+.right:hover .items span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.left {
+    background-color: #919191;
+}
+.middle{
+    background-color: #757575;
+}
+.right{
+    background-color: #585858;
+}

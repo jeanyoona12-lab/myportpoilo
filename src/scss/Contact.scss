@@ -1,0 +1,40 @@
+@import "../scss/global.scss"; 
+
+
+
+
+
+.contact-page {
+    position: relative;
+}
+.propile {
+    position: absolute;
+    top: 100px;
+
+    width: 850px;
+    height: 940px;
+    background-image: url(../assets/contact.png);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+.contact{
+    @include en-2;
+    line-height: 0.9;
+    position: absolute;
+    top: 100px;
+    right: 25%;
+    z-index: 10;
+}
+.chat{
+    background-color: rgb(207, 207, 207);
+    @include preten-Regular;
+    padding: 110px 80px;
+    position: absolute;
+    top: 610px;
+    right: 2%;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    font-size: 21px;
+}

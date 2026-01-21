@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+// @import "../scss/global.scss"; 
+
+
+//  영문폰트 Anton
+@mixin en-big {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 485px;
+    font-style: normal;
+}
+/* 영문폰트 Lora */
+
+@mixin en-Title {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 22px;
+}
+
+/* 한글폰트 , 영어 Pretendard */
+@font-face {
+    font-family: "Pretendard";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+        format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "NordminneScript";
+    src: url("../fonts/NordminneScript_PERSONAL_USE_ONLY.otf")
+        format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

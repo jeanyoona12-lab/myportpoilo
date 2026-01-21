@@ -1,0 +1,87 @@
+@import "../scss/global.scss";
+
+.projects-title {
+    position: relative;
+}
+.projects {
+    position: absolute;
+    left: 10px;
+}
+
+.pro {
+    color: transparent;
+    -webkit-text-stroke: 1.5px #000;
+    paint-order: stroke fill;
+    @include en-1(412px);
+    transform: translateY(-100px) translateX(10px);
+}
+.jects {
+    @include en-1(412px);
+    transform: translateY(-380px) translateX(300px);
+}
+.menu-bar {
+    display: flex;
+    flex-direction: column;
+    transform: translateY(420px) translateX(80%);
+    @include preten-Regular;
+    line-height: 30px;
+    > ul {
+        color: #535353;
+        transition: 0.3s;
+    }
+}
+
+.personal-list {
+    margin-top: 6px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    z-index: 5;
+
+    li {
+        opacity: 0;
+        transform: translateY(6px);
+        animation: fadeSlide 0.28s ease forwards;
+    }
+
+    li:nth-child(1) {
+        animation-delay: 0.02s;
+    }
+    li:nth-child(2) {
+        animation-delay: 0.06s;
+    }
+    li:nth-child(3) {
+        animation-delay: 0.1s;
+    }
+    li:nth-child(4) {
+        animation-delay: 0.14s;
+    }
+    li:nth-child(5) {
+        animation-delay: 0.18s;
+    }
+}
+ul li:hover{
+    color: #1c1c1c;
+}
+.stay:hover {
+    color: #535353;
+}
+.resty:hover {
+    color: #535353;
+}
+
+.box{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    background-color: #1c1c1c;
+}
+@keyframes fadeSlide {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
