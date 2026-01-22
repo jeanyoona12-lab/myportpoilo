@@ -62,6 +62,14 @@ const Resty = () => {
                         </div>
                     </div>
                 </div>
+                <a
+                    href="https://jeanyoona12-lab.github.io/reste/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="reste-link"
+                >
+                    LINK ⏵
+                </a>
             </div>
         </>
     );

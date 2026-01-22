@@ -1,3 +1,9 @@
-body{
+body {
     background-color: #f4f4f4;
+}
+
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

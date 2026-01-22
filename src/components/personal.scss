@@ -77,3 +77,12 @@
     @include preten-Regular;
 }
 
+.personal-link{
+    color: #1c1c1c;
+    @include preten-Regular;
+    display: block;
+    position: fixed;
+    top: 35%;
+    left: 73%;
+}
+

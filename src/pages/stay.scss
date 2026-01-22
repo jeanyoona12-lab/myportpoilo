@@ -74,3 +74,14 @@
         transform: translateX(0);
     }
 }
+
+.stay-link{
+    color: #f4f4f4;
+    @include preten-Regular;
+    display: block;
+    position: fixed;
+    top: 75%;
+    left: 65%;
+}
+
+

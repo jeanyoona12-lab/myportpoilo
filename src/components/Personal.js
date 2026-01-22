@@ -10,20 +10,28 @@ const Personal = () => {
     if (!item) return <div>not found</div>;
 
     return (
-        <div className="personal-page"> 
+        <div className="personal-page">
+            <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="personal-link"
+            >
+                {item.link.label}
+                LINK ⏵
+            </a>
             {/* <div className="image-section">
                 <img src={item.image} alt="" />
             </div> */}
             <div className="mockup-wrap">
-                    {item.mockups?.map((m, i) => (
-                        <span key={i} className={`mockup ${m.device}`}>
-                            <img src={m.src} alt="" />
-                        </span>
-                    ))}
-                </div>
+                {item.mockups?.map((m, i) => (
+                    <span key={i} className={`mockup ${m.device}`}>
+                        <img src={m.src} alt="" />
+                    </span>
+                ))}
+            </div>
 
             <div className="box-text">
-                
                 {/* {item.panel?.["text-top"]?.map((t, i) => (
                     <p key={`top-${i}`}>{t}</p>
                 ))} */}
@@ -59,6 +67,7 @@ const Personal = () => {
                 <p className="hero-sub">{item.title.sub}</p>
             </div>
         </div>
+        
     );
 };
 

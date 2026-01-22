@@ -2,7 +2,7 @@
     "items": [
         {
             "id": "01",
-            "image": "/image/animation_01.png", 
+            "image": "", 
             "type": "animation",
             "title": {
                 "main": "ANIMATION",
@@ -12,14 +12,17 @@
                 "value": 1,
                 "label": "COUNT"
             },
+            "link" : [
+                "https://jeanyoona12-lab.github.io/quiz/"
+            ],
             "mockups": [
                 {
                     "device": "mobile",
-                    "src": "/image/mock_quiz_mobile.png"
+                    "src": "/myportpoilo/image/mock_quiz_mobile.png"
                 },
                 {
                     "device": "desktop",
-                    "src": "/image/mock_quiz_desktop.png"
+                    "src": "/myportpoilo/image/mock_quiz_desktop.png"
                 }
             ],
             
@@ -50,10 +53,13 @@
                 "value": 2,
                 "label": "COUNT"
             },
+            "link" : [
+                "https://jeanyoona12-lab.github.io/dashboard/"
+            ],
             "mockups": [
                 {
                     "device": "desktop",
-                    "src": "/image/mock_dashboard_desktop.png"
+                    "src": "/myportpoilo/image/mock_dashboard_desktop.png"
                 }
             ],
             "panel": {
