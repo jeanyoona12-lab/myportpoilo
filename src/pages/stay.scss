@@ -1,47 +1,57 @@
 @import "../scss/global.scss";
 
-
-.stay-page{
+.stay-page {
     background-color: #1c1c1c;
     height: 100vh;
-    
+    position: relative;
+    z-index: 1;
 }
-.stay-big{
+.stay-big {
     @include en-4;
     color: #f4f4f4;
     text-align: right;
     padding: 3rem;
 }
 
-.box-text{
+.box-text {
     color: #f4f4f4;
 }
 
-.stay-trouble-block, .stay-next-block{
+.stay-trouble-block,
+.stay-next-block {
     @include preten-Regular;
     color: #f4f4f4;
 }
-
-.stay-next-block{
+.stay-big,
+.box-text,
+.stay-link {
+    position: relative;
+    z-index: 2;
+}
+.stay-next-block {
     margin-top: 10rem;
 }
-.stay-image{
+.stay-image {
     position: fixed;
+    z-index: 0;
     top: 28%;
     left: 45%;
     width: 55%;
 }
-.stay-inner-text-top  p{
-    padding: 1rem 0 0 0;
+.stay-inner-text-top {
+    transform: translateY(-24px);
+ }
+.stay-inner-text-top p {
+    padding: 0.8rem 0 0 0;
 }
-.stay-inner-text-bottom{
-    padding-top: 1rem;
+.stay-inner-text-bottom {
+    padding-top: rem;
 }
-.stay-trouble-block > h3{
+.stay-trouble-block > h3 {
     @include en-4;
     color: #f4f4f4;
 }
-.stay-next-block > h3{
+.stay-next-block > h3 {
     @include en-4;
     color: #f4f4f4;
 }
@@ -75,7 +85,7 @@
     }
 }
 
-.stay-link{
+.stay-link {
     color: #f4f4f4;
     @include preten-Regular;
     display: block;
@@ -83,5 +93,3 @@
     top: 75%;
     left: 65%;
 }
-
-
