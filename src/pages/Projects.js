@@ -17,8 +17,7 @@ const Projects = () => {
                     <span className="stay" onClick={() => navigate("/stay")}>
                         STAY <GoChevronRight />
                     </span>
-                    <span className="resty"
-                    onClick={() => navigate("/resty")}>
+                    <span className="resty" onClick={() => navigate("/resty")}>
                         RESTY <GoChevronRight />
                     </span>
                     <div
@@ -28,12 +27,26 @@ const Projects = () => {
                         Personal Project{" "}
                         {openPersonal ? <GoChevronDown /> : <GoChevronRight />}
                     </div>
+                    <div>
+                        <a
+                        href="https://www.notion.so/2D-3D-26a37335804f8022abfffcdcc03c7748"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="resty"
+                    >
+                        ImageViewer (노션)⏵
+                    </a>
+                    </div>
 
                     {openPersonal && (
                         <ul className="personal-list">
-                            <li onClick={() => navigate("/personal/animation")}>Animation Quiz</li>
-                            <li onClick={() => navigate("/personal/dashboard")}>Time Dashboard</li>
-                            
+                            <li onClick={() => navigate("/personal/animation")}>
+                                Animation Quiz
+                            </li>
+                            <li onClick={() => navigate("/personal/dashboard")}>
+                                Time Dashboard
+                            </li>
+
                             {/* <li>Study Site</li>
                             <li>Blog Web</li>
                             <li>Blog Web</li> */}

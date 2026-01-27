@@ -62,7 +62,8 @@
 .box-text {
     position: absolute;
     top: -20px;
-    padding: 3rem
+    padding: 3rem;
+    color: #1c1c1c;
 }
 .next-block > h3 {
     @include en-4;
