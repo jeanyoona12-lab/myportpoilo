@@ -13,7 +13,7 @@ const Stay = () => {
                     rel="noopener noreferrer"
                     class="stay-link"
                 >
-                    LINK ⏵
+                    LINK ⏵ <br /> 회원가입 후 테스트 가능합니다. <br /> <span>ID : aaaa PW : 1111</span>
                 </a>
                 <p className="stay-big">STAY</p>
                 <div className="box-text">
