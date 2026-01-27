@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/myportpoilo/static/css/main.6dc03d02.css",
-    "main.js": "/myportpoilo/static/js/main.f374adb4.js",
+    "main.js": "/myportpoilo/static/js/main.2b57808e.js",
     "static/media/contact.png": "/myportpoilo/static/media/contact.7b49055898306d3915d4.png",
     "static/media/mock_reste.png": "/myportpoilo/static/media/mock_reste.d4c37f978bcd8efd54dc.png",
     "static/media/mock_stay.png": "/myportpoilo/static/media/mock_stay.513d3b8f01e4c551122e.png",
     "static/media/NordminneScript_PERSONAL_USE_ONLY.otf": "/myportpoilo/static/media/NordminneScript_PERSONAL_USE_ONLY.2995db2f20e0584dc4a3.otf",
     "index.html": "/myportpoilo/index.html",
     "main.6dc03d02.css.map": "/myportpoilo/static/css/main.6dc03d02.css.map",
-    "main.f374adb4.js.map": "/myportpoilo/static/js/main.f374adb4.js.map"
+    "main.2b57808e.js.map": "/myportpoilo/static/js/main.2b57808e.js.map"
   },
   "entrypoints": [
     "static/css/main.6dc03d02.css",
-    "static/js/main.f374adb4.js"
+    "static/js/main.2b57808e.js"
   ]
 }
